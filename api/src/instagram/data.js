@@ -421,4 +421,4 @@ const InstagramData =  [
     }
 ]
 
-module.exports = InstagramData;
+export default InstagramData;

@@ -39,4 +39,4 @@ const categoryData =  [
     }
 ]
 
-module.exports = categoryData;
+export default categoryData;

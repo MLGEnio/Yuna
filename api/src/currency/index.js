@@ -10,4 +10,4 @@ const CurrencyTypeDefs = `
   }
 `
 
-module.export = CurrencyTypeDefs
+export default CurrencyTypeDefs

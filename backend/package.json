@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.8",
+    "@apollo/react-ssr": "^4.0.0",
     "@reduxjs/toolkit": "^2.0.1",
     "@uiw/react-md-editor": "^4.0.3",
     "apexcharts": "^3.45.1",
     "bootstrap": "^5.3.2",
     "chart.js": "^3.8.0",
+    "graphql": "^16.9.0",
     "i18next": "^23.7.16",
     "i18next-browser-languagedetector": "^7.2.0",
     "i18next-resources-to-backend": "^1.2.0",
@@ -29,6 +32,7 @@
     "react-dropzone-uploader": "^2.11.0",
     "react-feather": "^2.0.10",
     "react-google-charts": "^4.0.1",
+    "react-hook-form": "^7.53.0",
     "react-i18next": "^14.0.0",
     "react-rating": "^2.0.5",
     "react-rating-stars-component": "^2.2.0",

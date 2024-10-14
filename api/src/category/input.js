@@ -1,4 +1,4 @@
-const { GraphQLInputObjectType, GraphQLInt, GraphQLString, GraphQLNonNull } = require('graphql');
+import { GraphQLInputObjectType, GraphQLInt, GraphQLString, GraphQLNonNull }  from 'graphql';
 // @InputType({ description: 'Create New Category' })
 const CategoryInput = new GraphQLInputObjectType({
     name:'CategoryInput',
@@ -15,4 +15,4 @@ const CategoryInput = new GraphQLInputObjectType({
     })
 })
 
-module.exports = CategoryInput;
+export default CategoryInput;

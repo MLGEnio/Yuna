@@ -1,16 +1,20 @@
-const { GraphQLInputObjectType, GraphQLNonNull, GraphQLString, GraphQLObjectType } = require("graphql");
-
+import {
+  GraphQLInputObjectType,
+  GraphQLNonNull,
+  GraphQLString,
+  GraphQLObjectType,
+} from "graphql";
 
 const InstaInput = new GraphQLObjectType({
-    name: "InstagramInput",
-    fields: {
-        type: {
-            type: new GraphQLNonNull(GraphQLString)
-        },
-        img: {
-            type: new GraphQLNonNull(GraphQLString)
-        }
-    }
-})
+  name: "InstagramInput",
+  fields: {
+    type: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    img: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+  },
+});
 
-module.exports = InstaInput;
+export default InstaInput;

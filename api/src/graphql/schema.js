@@ -1,4 +1,3 @@
-
 const typeDefs = `
     type Product {
         id: Int!
@@ -130,6 +129,22 @@ const typeDefs = `
         getProducts(limit:Int):[Product]
         getCurrency:[Currency]
       }
+      type User {
+        username: String!
+        email: String!
+        password: String!
+        confirmPassword: String!
+      }
+    
+      type AuthResponse {
+        token: String
+        error: String
+      }
+    
+      type Mutation {
+        signup(username: String!, email: String!, password: String!, confirmPassword: String!): User
+        login(username: String!, password: String!): AuthResponse
+      }
   
     # type Mutation {
     #     createUser(name: String, email: String, password: String): User
@@ -142,6 +157,4 @@ const typeDefs = `
     # }
 `;
 
-
-
-module.exports = typeDefs
+export default typeDefs;

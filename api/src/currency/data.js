@@ -25,4 +25,4 @@ const loadCurrency = [
   }
 ]
 
-module.exports = loadCurrency;
+export default loadCurrency;
